@@ -1,0 +1,119 @@
+@startgantt
+hide footbox
+<style>
+ganttDiagram {
+	task {
+		roundCorner 3
+	}
+	arrow {
+    		lineColor black
+  	}
+}
+</style>
+[Pregled projekta] lasts 3 days
+[Razmislek o tehnični izvedbi] lasts 6 days
+[Vodenje projekta] lasts 63 days
+[Shema podatkovne baze] lasts 5 days
+[Vzpostavitev glavne podatkovne shrambe] lasts 3 days
+[Začetna implementacija zaledja] lasts 7 days
+[Začetna implementacija aplikacije] lasts 7 days
+[Povezava s Spotify API] lasts 2 days
+[Vzpostavitev sekundarne podatkovne shrambe] lasts 3 days
+[Povezava glavne podatkovne baze z zaledjem] lasts 7 days
+[Implementacija poslovne logike zaledja] lasts 10 days
+[Vključitev realnih podatkov v sekundarno bazo] lasts 2 days
+[Analitika in logika sekundarne podatkovne baze] lasts 5 days
+[Izpopolnitev aplikacije grafično in funkcionalno] lasts 11 days
+[Priprava testnih primerov] lasts 3 days
+[Testiranje uporabniškega vmesnika] lasts 7 days
+[Testiranje javnega aplikacijskega programskega vmesnika] lasts 7 days
+[Dokumentiranje javnega aplikacijskega programskega vmesnika] lasts 11 days
+[Izdelava grafičnega materiala za izobraževanje novih uporabnikov] lasts 3 days
+[Objava aplikacije na Apple App Store in Google Play Store] lasts 4 days
+
+Project starts 2022-03-21
+[Pregled projekta] starts 2022-03-21
+[Pregled projekta] is colored in LightSkyBlue
+[Pregled projekta] -> [Razmislek o tehnični izvedbi]
+
+[Razmislek o tehnični izvedbi] starts 2022-03-24
+[Razmislek o tehnični izvedbi] is colored in LightSkyBlue
+[Razmislek o tehnični izvedbi] -> [Shema podatkovne baze]
+[Razmislek o tehnični izvedbi] -> [Začetna implementacija zaledja]
+[Razmislek o tehnični izvedbi] -> [Začetna implementacija aplikacije] 
+
+[Vodenje projekta] starts 2022-03-21
+[Vodenje projekta] is colored in LightSkyBlue
+
+[Shema podatkovne baze] starts 2022-03-30
+[Shema podatkovne baze] is colored in LightGreen
+[Shema podatkovne baze] -> [Vzpostavitev glavne podatkovne shrambe]
+[Shema podatkovne baze] -> [Začetna implementacija zaledja]
+
+[Vzpostavitev glavne podatkovne shrambe] starts 2022-04-04
+[Vzpostavitev glavne podatkovne shrambe] is colored in LightGreen
+[Vzpostavitev glavne podatkovne shrambe] -> [Vzpostavitev sekundarne podatkovne shrambe]
+[Vzpostavitev glavne podatkovne shrambe] -> [Povezava glavne podatkovne baze z zaledjem]
+
+[Začetna implementacija zaledja] starts 2022-04-04
+[Začetna implementacija zaledja] is colored in LightGreen
+[Začetna implementacija zaledja] -> [Povezava s Spotify API]
+[Začetna implementacija zaledja] -> [Povezava glavne podatkovne baze z zaledjem]
+
+[Začetna implementacija aplikacije] starts 2022-03-30
+[Začetna implementacija aplikacije] is colored in LightGreen
+[Začetna implementacija aplikacije] -> [Izpopolnitev aplikacije grafično in funkcionalno]
+
+[Povezava s Spotify API] starts 2022-04-11
+[Povezava s Spotify API] is colored in LightGreen
+[Povezava s Spotify API] -> [Vključitev realnih podatkov v sekundarno bazo]
+
+[Vzpostavitev sekundarne podatkovne shrambe] starts 2022-04-07
+[Vzpostavitev sekundarne podatkovne shrambe] is colored in LightGreen
+[Vzpostavitev sekundarne podatkovne shrambe] -> [Vključitev realnih podatkov v sekundarno bazo]
+
+[Povezava glavne podatkovne baze z zaledjem] starts 2022-04-11
+[Povezava glavne podatkovne baze z zaledjem] is colored in LightPink
+[Povezava glavne podatkovne baze z zaledjem] -> [Implementacija poslovne logike zaledja]
+
+[Implementacija poslovne logike zaledja] starts 2022-04-18
+[Implementacija poslovne logike zaledja] is colored in LightPink
+[Implementacija poslovne logike zaledja] -> [Izpopolnitev aplikacije grafično in funkcionalno]
+[Implementacija poslovne logike zaledja] -> [Dokumentiranje javnega aplikacijskega programskega vmesnika] 
+
+[Vključitev realnih podatkov v sekundarno bazo] starts 2022-04-13
+[Vključitev realnih podatkov v sekundarno bazo] is colored in LightPink
+[Vključitev realnih podatkov v sekundarno bazo] -> [Analitika in logika sekundarne podatkovne baze]
+[Vključitev realnih podatkov v sekundarno bazo] -> [Izpopolnitev aplikacije grafično in funkcionalno]
+
+[Analitika in logika sekundarne podatkovne baze] starts 2022-04-15
+[Analitika in logika sekundarne podatkovne baze] is colored in LightPink
+
+[Izpopolnitev aplikacije grafično in funkcionalno] starts 2022-04-28
+[Izpopolnitev aplikacije grafično in funkcionalno] is colored in LightPink
+[Izpopolnitev aplikacije grafično in funkcionalno] -> [Izdelava grafičnega materiala za izobraževanje novih uporabnikov]
+[Izpopolnitev aplikacije grafično in funkcionalno] -> [Priprava testnih primerov]
+[Priprava testnih primerov] starts 2022-05-09
+[Priprava testnih primerov] is colored in Red
+[Priprava testnih primerov] -> [Testiranje uporabniškega vmesnika]
+[Priprava testnih primerov] -> [Testiranje javnega aplikacijskega programskega vmesnika]
+
+[Testiranje uporabniškega vmesnika] starts 2022-05-12
+[Testiranje uporabniškega vmesnika] is colored in Red
+[Testiranje uporabniškega vmesnika] -> [Objava aplikacije na Apple App Store in Google Play Store]
+
+[Testiranje javnega aplikacijskega programskega vmesnika] starts 2022-05-12
+[Testiranje javnega aplikacijskega programskega vmesnika] is colored in Red
+[Testiranje javnega aplikacijskega programskega vmesnika] -> [Objava aplikacije na Apple App Store in Google Play Store]
+
+[Dokumentiranje javnega aplikacijskega programskega vmesnika] starts 2022-04-28
+[Dokumentiranje javnega aplikacijskega programskega vmesnika] is colored in Red
+[Dokumentiranje javnega aplikacijskega programskega vmesnika] -> [Objava aplikacije na Apple App Store in Google Play Store]
+
+[Izdelava grafičnega materiala za izobraževanje novih uporabnikov] starts 2022-05-09
+[Izdelava grafičnega materiala za izobraževanje novih uporabnikov] is colored in Red
+[Izdelava grafičnega materiala za izobraževanje novih uporabnikov] -> [Objava aplikacije na Apple App Store in Google Play Store]
+
+[Objava aplikacije na Apple App Store in Google Play Store] starts 2022-05-19
+[Objava aplikacije na Apple App Store in Google Play Store] is colored in Red
+@endgantt

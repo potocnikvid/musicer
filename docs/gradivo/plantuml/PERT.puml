@@ -1,0 +1,149 @@
+@startuml
+[*] -[#green]-> Pregled_projekta
+Pregled_projekta: Trajanje: 3
+Pregled_projekta: Drsenje: 0
+Pregled_projekta: začetek: 21.3.2022
+Pregled_projekta: konec: 23.3.2022
+
+[*] -[#green]-> Vodenje_projekta
+Vodenje_projekta: Trajanje: 3
+Vodenje_projekta: Drsenje: 0
+Vodenje_projekta: začetek: 21.3.2022
+Vodenje_projekta: konec: 22.5..2022
+
+
+Pregled_projekta -[#green]-> Razmislek_o_tehnični_izvedbi
+Razmislek_o_tehnični_izvedbi: Trajanje: 4
+Razmislek_o_tehnični_izvedbi: Drsenje: 0
+Razmislek_o_tehnični_izvedbi: Začetek: 24.3.2022
+Razmislek_o_tehnični_izvedbi: Konec: 29.3.2022
+
+Razmislek_o_tehnični_izvedbi -[#green]-> shema_PB
+shema_PB: Trajanje: 3
+shema_PB: Drsenje: 0
+shema_PB: Zgodnji začetek: 30.3.2022
+shema_PB: Pozen konec: 3.4.2022
+
+Razmislek_o_tehnični_izvedbi --> zacetna_implementacija_zaledja
+zacetna_implementacija_zaledja: Trajanje: 5
+zacetna_implementacija_zaledja: Drsenje: 0
+zacetna_implementacija_zaledja: Začetek: 4.4.2022
+zacetna_implementacija_zaledja: Konec: 10.4.2022
+
+Razmislek_o_tehnični_izvedbi --> zacetna_implementacija_aplikacije
+zacetna_implementacija_aplikacije: Trajanje: 5
+zacetna_implementacija_aplikacije: Drsenje: 22
+zacetna_implementacija_aplikacije: Zgodnji začetek: 30.3.2022
+zacetna_implementacija_aplikacije: Pozen začetek: 21.4.2022
+zacetna_implementacija_aplikacije: Zgoden konec: 5.4.2022
+zacetna_implementacija_aplikacije: Pozen konec: 27.4.2022
+
+shema_PB --> vzpostavitev_glavne_podatkovne_shrambe
+vzpostavitev_glavne_podatkovne_shrambe: Trajanje: 3
+vzpostavitev_glavne_podatkovne_shrambe: Drsenje: 3
+vzpostavitev_glavne_podatkovne_shrambe: Zgodnji začetek: 4.4.2022
+vzpostavitev_glavne_podatkovne_shrambe: Pozen začetek: 7.4.2022
+vzpostavitev_glavne_podatkovne_shrambe: Zgoden konec: 6.4.2022
+vzpostavitev_glavne_podatkovne_shrambe: Pozni konec: 9.4.2022
+
+shema_PB -[#green]-> zacetna_implementacija_zaledja
+
+vzpostavitev_glavne_podatkovne_shrambe --> vzpostavite_sekundarne_podatkovne_shrambe
+vzpostavite_sekundarne_podatkovne_shrambe: Trajanje: 3
+vzpostavite_sekundarne_podatkovne_shrambe: Drsenje: 3
+vzpostavite_sekundarne_podatkovne_shrambe: Zgodnji začetek: 7.4.2022
+vzpostavite_sekundarne_podatkovne_shrambe: Pozen začetek: 10.4.2022
+vzpostavite_sekundarne_podatkovne_shrambe: Zgoden konec: 9.4.2022
+vzpostavite_sekundarne_podatkovne_shrambe: Pozni konec: 12.4.2022
+
+zacetna_implementacija_zaledja --> povezava_s_spotify_api
+povezava_s_spotify_api: Trajanje: 2
+povezava_s_spotify_api: Drsenje: 13
+povezava_s_spotify_api: Zgodnji začetek: 11.4.2022
+povezava_s_spotify_api: Pozen začetek: 24.4.2022
+povezava_s_spotify_api: Zgoden konec: 12.4.2022
+povezava_s_spotify_api: Pozen konec: 25.4.2022
+
+vzpostavite_sekundarne_podatkovne_shrambe --> vključitev_realnih_podatkov_v_sekundarno_bazo
+vključitev_realnih_podatkov_v_sekundarno_bazo: Trajanje: 2
+vključitev_realnih_podatkov_v_sekundarno_bazo: Drsenje: 13
+vključitev_realnih_podatkov_v_sekundarno_bazo: Zgonji začetek: 13.4.2022
+vključitev_realnih_podatkov_v_sekundarno_bazo: Pozen začetek: 26.4.2022
+vključitev_realnih_podatkov_v_sekundarno_bazo: Zgoden konec: 14.4.2022
+vključitev_realnih_podatkov_v_sekundarno_bazo: Pozni konec: 27. 4. 2022
+
+povezava_s_spotify_api --> vključitev_realnih_podatkov_v_sekundarno_bazo
+
+vključitev_realnih_podatkov_v_sekundarno_bazo --> analitika_in_logika_sekundarne_baze
+analitika_in_logika_sekundarne_baze: Trajanje: 3
+analitika_in_logika_sekundarne_baze: Drsenje: 32
+analitika_in_logika_sekundarne_baze: Zgodnji začetek: 15.4.2022
+analitika_in_logika_sekundarne_baze: Pozen začetek: 19.5.2022
+analitika_in_logika_sekundarne_baze: Zgoden konec: 17.4.2022
+analitika_in_logika_sekundarne_baze: Pozen konec: 22.5.2022
+
+vzpostavitev_glavne_podatkovne_shrambe --> povezava_podatkovne_baze_z_zaledjem
+povezava_podatkovne_baze_z_zaledjem: Trajanje: 5
+povezava_podatkovne_baze_z_zaledjem: Drsenje: 0
+povezava_podatkovne_baze_z_zaledjem: Začetek: 11.4.2022
+povezava_podatkovne_baze_z_zaledjem: Konec: 17.4.2022
+
+zacetna_implementacija_zaledja -[#green]-> povezava_podatkovne_baze_z_zaledjem
+
+povezava_podatkovne_baze_z_zaledjem -[#green]-> implementacija_poslovne_logike_zaledja
+implementacija_poslovne_logike_zaledja: Trajanje: 8
+implementacija_poslovne_logike_zaledja: Drsenje: 0
+implementacija_poslovne_logike_zaledja: Začetek: 18.4.2022
+implementacija_poslovne_logike_zaledja: Konec: 27.4.2022
+
+zacetna_implementacija_aplikacije --> izpopolnitev_aplikacije
+vključitev_realnih_podatkov_v_sekundarno_bazo --> izpopolnitev_aplikacije
+implementacija_poslovne_logike_zaledja -[#green]-> izpopolnitev_aplikacije
+izpopolnitev_aplikacije: Trajanje: 7
+izpopolnitev_aplikacije: Drsenje: 0
+izpopolnitev_aplikacije: Začetek: 28.4.2022
+izpopolnitev_aplikacije: Konec: 8.5.2022
+
+implementacija_poslovne_logike_zaledja --> dokumentacija_javnega_aplikacijskega_vmesnika
+dokumentacija_javnega_aplikacijskega_vmesnika: Trajanje: 7
+dokumentacija_javnega_aplikacijskega_vmesnika: Drsenje: 7
+dokumentacija_javnega_aplikacijskega_vmesnika: Zgodnji začetek: 28.4.2022
+dokumentacija_javnega_aplikacijskega_vmesnika: Pozen začetek: 5.5.2022
+dokumentacija_javnega_aplikacijskega_vmesnika: Zgoden konec: 8.4.2022
+dokumentacija_javnega_aplikacijskega_vmesnika: Pozen konec: 15.5.2022
+
+izpopolnitev_aplikacije -[#green]-> priprava_testnih_primerov
+priprava_testnih_primerov: Trajanje: 3
+priprava_testnih_primerov: Drsenje: 0
+priprava_testnih_primerov: Začetek: 9.5.2022
+priprava_testnih_primerov: Konec: 11.5.2022
+
+dokumentacija_javnega_aplikacijskega_vmesnika --> izdelava_grafičnega_materiala
+izdelava_grafičnega_materiala: Trajanje: 3
+izdelava_grafičnega_materiala: Drsenje: 7
+izdelava_grafičnega_materiala: Zgoden začetek: 9.5.2022
+izdelava_grafičnega_materiala: Pozen začetek: 16.5.2022
+izdelava_grafičnega_materiala: Zgoden konec: 11.5.2022
+izdelava_grafičnega_materiala: Pozen konec: 18.5.2022
+
+priprava_testnih_primerov -[#green]-> Testiranje_uporabniškega_vmesnika
+Testiranje_uporabniškega_vmesnika: Trajanje: 5
+Testiranje_uporabniškega_vmesnika: Drsenje: 0
+Testiranje_uporabniškega_vmesnika: Začetek: 12.5.2022
+Testiranje_uporabniškega_vmesnika: Konec: 18.5.2022
+
+priprava_testnih_primerov -[#green]-> Testiranje_javnega_aplikacijskega_vmesnika
+Testiranje_javnega_aplikacijskega_vmesnika: Trajanje: 5
+Testiranje_javnega_aplikacijskega_vmesnika: Drsenje: 0
+Testiranje_javnega_aplikacijskega_vmesnika: Začetek: 12.5.2022
+Testiranje_javnega_aplikacijskega_vmesnika: Konec: 18.5.2022
+
+Testiranje_uporabniškega_vmesnika -[#green]-> OBJAVA_APLIKACIJE
+Testiranje_javnega_aplikacijskega_vmesnika -[#green]-> OBJAVA_APLIKACIJE
+izdelava_grafičnega_materiala --> OBJAVA_APLIKACIJE
+
+OBJAVA_APLIKACIJE: Trajanje: 4
+OBJAVA_APLIKACIJE: Drsenje: 0
+OBJAVA_APLIKACIJE: Začetek: 19.5.2022
+OBJAVA_APLIKACIJE: Konec: 22.5.2022
+@enduml
